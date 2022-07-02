@@ -72,10 +72,14 @@ function draw() {
   } 
   else if(n==4){ // Bouncing ball waiting for timeout or click to proceed
 	background(myBgColor);
-    text(introText[0],0,-150);
+    	text(introText[0],0,-150);
 	drawBouncingBall(0,0,bouncingBallSize);
-    if(m<500){ m++; }
-    else{ n++; m=0; }
+    push();
+        // textSize(12);
+	text(folioText[0],0,300);
+    pop();
+    	if(m<500){ m++; }
+    	else{ n++; m=0; }
   }
   else if(n==5){ // Starting ball ONE at center
     background(myBgColor);
@@ -246,6 +250,8 @@ function draw() {
     textSize(16);
 	text(fortuneText[r64],0,0);	
 	drawBouncingBall(0,200,bouncingBallSize);
+    text(folioText[2],0,300);
+	text(folioText[1],0,328);
   }
   //else if(n==1) noLoop();
 }
@@ -405,7 +411,11 @@ class Ball { // object to draw Taiji
 }
 
 const introText = [
-	'Do you believe in fate?\nThink of a question that bothers you.\nTell your fortune here.'
+	'Welcome.\nDo you believe in fate?\nThink of a question that bothers you.\nTell your fortune here.'
+];
+
+const folioText = [
+	'↓↓↓ Scroll down for other projects','↓↓↓ Scroll down for other projects.','↑↑↑ Replay'
 ];
 
 //Text copied from http://www.circlelo.com/mwm/CHINESE/FORECAST/I-Ching/b6.html
