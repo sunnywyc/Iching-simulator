@@ -76,7 +76,7 @@ function draw() {
 	drawBouncingBall(0,0,bouncingBallSize);
     push();
         // textSize(12);
-	text(folioText[0],0,300);
+	text(folioText[0],0,150);
     pop();
     	if(m<500){ m++; }
     	else{ n++; m=0; }
@@ -250,8 +250,8 @@ function draw() {
     textSize(16);
 	text(fortuneText[r64],0,0);	
 	drawBouncingBall(0,200,bouncingBallSize);
-    text(folioText[2],0,300);
-	text(folioText[1],0,328);
+    text(folioText[2],0,250);
+	text(folioText[1],0,278);
   }
   //else if(n==1) noLoop();
 }
@@ -415,7 +415,7 @@ const introText = [
 ];
 
 const folioText = [
-	'↓↓↓ Scroll down for other projects','↓↓↓ Scroll down for other projects.','↑↑↑ Replay'
+	'↓↓↓ Scroll down for other projects','↓↓↓ Scroll down for other projects','↑↑↑ Replay'
 ];
 
 //Text copied from http://www.circlelo.com/mwm/CHINESE/FORECAST/I-Ching/b6.html
@@ -549,4 +549,3 @@ const fortuneText = [
 'No.64 The Creative\nThe Creative works sublime success,\nFurthering through perseverance.\nThe movement of heaven is full of power.\nThus the superior man makes himself strong and untiring.'//No.64
   
 ];
-
